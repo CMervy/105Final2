@@ -1,0 +1,98 @@
+body{
+    padding: 200px;
+    background: #111012;
+    background: linear-gradient(92deg,rgba(17, 16, 18, 1) 0%, rgba(116, 50, 161, 1) 50%, rgba(8, 0, 0, 1) 100%);
+}
+
+@media(max-width: 900px){
+    body{
+        padding: 100px 50px;
+    }
+}
+
+@media(max-width: 600px){
+    body{
+        padding: 50px 20px;
+    }
+}
+
+@media(max-width: 400px){
+    body{
+        padding: 20px 10px;
+    }
+}
+
+.container{
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 150px rgba(255, 255, 255, 0.95);
+    margin: auto;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.95);
+}
+
+h2{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#answerChoices{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#answerChoices label{
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#answerChoices label:hover{
+    background: #ece1f8;
+    transform: translateY(-2px);
+    box-shadow: rgba(116, 50, 161, 0.3);
+}
+
+button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#submit{
+    text-align: center;
+}
+
+button:hover{
+    background-color: #5c2783;
+    transform: translateY(-2px);
+}
+
+#restartBtn{
+    display: none;
+    background-color: #28a745;
+}
+
+#score{
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
